@@ -35,11 +35,11 @@ var id = '5a2bfa99a676f300358de47a';
 if(!ObjectID.isValid(id)){
   console.log('ID not valid');
 }
-User.findById(id).then((todo)=>{
-  if(!todo){
+User.findById(id).then((user)=>{
+  if(!user){
     return console.log('Id not found');
   }
-  console.log('Todo By Id',todo);
+  console.log('Todo By Id',user);
 }).catch((e) => console.log(e));
 
 
